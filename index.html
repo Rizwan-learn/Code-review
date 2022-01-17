@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microverse Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="body">
+      <div class="head">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+      <form id="survey-form">
+        <div class="container">
+          <label id="name-label">Name</label>
+          <input type="text" placeholder="Enter your name" id="name" required />
+
+          <label id="email-label">Email</label>
+          <input
+            type="email"
+            placeholder="Enter your Email"
+            id="email"
+            required
+          />
+
+          <label id="age-label">Age (optional)</label>
+          <input type="number" placeholder="Age" id="age" min="1" max="5" />
+
+          <div class="select">
+            <label id="age-label"
+              >Which option best describe your current role</label
+            >
+            <select id="dropdown" value="Select Current Role">
+              <option value="">Select Current Role</option>
+              <option value="">Full time job</option>
+              <option value="">Full time learner</option>
+              <option value="">Prefer not to say</option>
+              <option value="">others</option>
+            </select>
+          </div>
+
+          <div class="radioBtns">
+            <label>Would you recommend freecode camp to a friend?</label>
+            <div class="btn">
+              <input type="radio" name="wouldrecommend" value="Definately" />
+              <label>Definately</label><br />
+              <input type="radio" name="wouldrecommend" value="Not Sure" />
+              <label>Not Sure</label><br />
+              <input type="radio" name="wouldrecommend" value="Maybe" />
+              <label>Maybe</label>
+            </div>
+          </div>
+
+          <div class="checkBtns">
+            <label>What would you like to see improved? (Check all that apply)</label>
+            <div class="btn">
+              <input type="checkbox" name="checkbox1" id="checkbox1" value="Front-End project" />
+              <label>Front-End project</label><br />
+              <input type="checkbox" name="checkbox2" id="checkbox2" value="BackEnd Project" />
+              <label>BackEnd Project</label><br />
+              <input type="checkbox" name="checkbox3" id="checkbox3" value="Data Visualization" />
+              <label>Data Visualization</label> <br />
+              <input type="checkbox" name="checkbox4" id="checkbox4" value="Challenges" />
+              <label>Challenges</label><br />
+              <input type="checkbox" name="checkbox5" id="checkbox5" value="Open source community" />
+              <label>Open source community</label><br />
+              <input type="checkbox" name="checkbox6" id="checkbox6" value="videos" />
+              <label>videos</label>
+            </div>
+          </div>
+          <div>
+            <label for="comment">Any Comments or suggestion</label>
+            <textarea name="comments" id="comment">Enter Your Comments Here</textarea>
+          </div>
+          
+
+          <button id="submit" type="button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
