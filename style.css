@@ -1,0 +1,90 @@
+body {
+    display: flex;
+   background-color:darkblue;
+   color: white;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+}
+#title {
+    text-align: center;
+    font-size: 25px;
+
+}
+#description {
+    text-align: center;
+    margin: 5px 0 15px;
+
+}
+form {
+    width: 60vw;
+    height: auto;
+    padding: 15px;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+}
+input[type = "text"], input[type = "email"], input[type = "number"] {
+    display: block;
+    width: 100%;
+    padding: 12px 5px;
+    box-sizing: border-box;
+    margin : 12px 0;
+    font-size: 12px;
+    color: black; 
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+.select {
+    display: flex;
+    flex-direction: column;
+
+}
+#dropdown {
+width: 100%;
+padding: 12px 5px;
+box-sizing: border-box;
+margin : 12px 0;
+font-size: 12px;
+color: black; 
+}
+label {
+    font-size: 18px;
+    margin: 5px 0;
+    
+}
+input[type = "radio"], input[type = "checkbox"] {
+    margin: 8px 3px;
+    font-size: 12px;
+}
+.radioBtns {
+    margin: 10px 0;
+
+
+}
+.checkBtns {
+    margin: 10px 0;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+#submit {
+    width: 100%;
+    height: auto;
+    padding: 12px 0;
+    margin: 15px 0;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    
+}
